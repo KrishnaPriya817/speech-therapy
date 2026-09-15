@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Speech Theraphy</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="brand">
+            <div class="logo">STP</div>
+            <div>
+                <h1>Speech Therapy Word Practice</h1>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="hero"><span class="pill">Speech Therapy Prototype</span>
+            <h2>எழுத்தைத் தேர்ந்தெடுத்து<br><span>சொற்களைப் பயிற்சி செய்யுங்கள்</span></h2>
+            <p>தமிழ் எழுத்தைத் தேர்வு செய்து, சொல்லின் ஆரம்பம், நடு அல்லது முடிவில் வரும் சொற்களைப் பாருங்கள்.</p>
+        </section>
+        <section class="panel"><label class="section-label">தமிழ் எழுத்து</label>
+            <div id="letters" class="letter-grid"></div>
+            <div class="filters">
+                <div><label>Word Sounding Place</label><select id="position">
+                        <option value="all">அனைத்தும்</option>
+                        <option value="beginning">ஆரம்பம்</option>
+                        <option value="middle">நடு</option>
+                        <option value="end">முடிவு</option>
+                    </select></div>
+                <div><label>சிரமம்</label><select id="difficulty">
+                        <option value="all">அனைத்தும்</option>
+                        <option value="easy">எளிது</option>
+                        <option value="medium">நடுத்தரம்</option>
+                        <option value="hard">கடினம்</option>
+                    </select></div>
+                <div><label>சொல் தேடல்</label><input id="search" type="search" placeholder="எ.கா. கல், கா..."></div>
+            </div>
+        </section>
+        <section class="results-head">
+            <div>
+                <h3 id="resultTitle">அனைத்து சொற்கள்</h3>
+                <p id="resultCount"></p>
+            </div><button id="clearBtn">அனைத்தையும் அழிக்க</button>
+        </section>
+        <section id="cards" class="cards"></section>
+        <div id="empty" class="empty" hidden>சொற்கள் கிடைக்கவில்லை.</div>
+    </main>
+</body>
+</html>
